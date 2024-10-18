@@ -36,13 +36,7 @@
     <body>
         <div id="wrapper">
             <div class="overlay"></div>
-    {% load crispy_forms_tags %}
-    
-    {% if msg %}
-        <ul class="messages">
-            <li class="alert alert-info">{{ msg }}</li>
-        </ul>
-    {% endif %}
+   
 
 
 
@@ -52,7 +46,7 @@
         <div class="container d-flex justify-content-center">
             <div class="card" style="width: 100%; max-width: 400px; padding: 20px;">
                 <form role="form" action="" method="post" autocomplete="off">
-                    {% csrf_token %}
+                  
                     <h2 class="text-center">Login Page</h2>
                     <div class="mb-3">
                         <label for="id_email" class="form-label">Email</label>
