@@ -55,12 +55,13 @@
                     {% csrf_token %}
                     <h2 class="text-center">Login Page</h2>
                     <div class="mb-3">
-                        <!-- <label for="id_email" class="form-label">Email</label> -->
-                        {{ form.email|as_crispy_field }}
-                    </div>
+                        <label for="id_email" class="form-label">Email</label>
+			<input type="text" name="email" placeholder="Enter email">		
+		    </div>
                     <div class="mb-3">
-                        <!-- <label for="id_password" class="form-label">Password</label> -->
-                        {{ form.password|as_crispy_field }}
+                        <label for="id_password" class="form-label">Password</label>
+                        
+			<input type="password" name="password" placeholder="Enter password">	
                     </div>
                     <div class="text-center">
                         <button class="btn btn-success" type="submit">Submit</button>
